@@ -1,0 +1,52 @@
+.search-result {
+    display: flex;
+    max-width: 1100px;
+    width: 100%;
+}
+
+.business-image {
+    width: 210px;
+    height: 210px;
+    border-radius: 4px;
+    margin-right: 1rem;
+}
+
+.business-info {
+    min-width: 400px;
+}
+
+.contact-info p {
+    font-size: .85rem;
+}
+.searchResult{
+    display: flex;
+    flex-direction: row;
+    background-color: inherit;
+    box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.3);
+    padding: 20px 20px 20px 20px;
+}
+.businessInfo{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+}
+.productTitle{
+    color: rgb(0, 135, 177);
+    font-size: 20px;
+    font-weight: 800;
+}
+.productTitle:hover {
+    color: rgb(0, 183, 255);
+}
+.visitStoreTitle{
+    color: rgb(0, 135, 177);
+    font-size: 20px;
+    font-weight: 400;
+}
+.visitStoreTitle:hover {
+    color: rgb(0, 183, 255);
+}
+.description{
+    word-wrap: break-word;
+    max-width: 800px;
+}

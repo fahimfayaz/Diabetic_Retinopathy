@@ -1,0 +1,26 @@
+.nav-bar{
+    display: flex;
+    background: #d32323;
+    padding: 1rem 0;
+    align-items: center;
+    justify-content: center;
+}
+.text{
+    font-size: 30px!important; 
+    color: #d32323;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.logo {
+    width: 75px;
+    margin-right: 1rem;
+}
+
+:global(.button).nav-button {
+    margin-left: 1rem;
+}
+.search-results{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+}
