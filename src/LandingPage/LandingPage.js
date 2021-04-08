@@ -18,6 +18,8 @@ import Chip from "@material-ui/core/Chip";
 import { useAuth0 } from '@auth0/auth0-react';
 import {Product_upload} from '../Products/Product_upload'
 import { Link } from 'react-router-dom';
+import Body from "./body.js"
+
 const SEARCH = gql`
   query MyQuery($match: String) {
     products(
@@ -65,16 +67,20 @@ export function LandingPage() {
   if (loading) return <p>Loading ...</p>;
   if (error) return <p>Error :(</p>;
   return (
-    <div className={styles.landing1}>
+    <div className={styles.landing1} >
       <TopNav />
-      <h1 style={{textAlign:"center", fontSize:"40px", paddingTop:"200px", paddingBottom:"120px"}} >
-          step 1 : signin/register
-          step 2 : upload a new picture will appear on the menu bar
+      <div style={{minHeight:"700px"}}>
+      <div style={{height:"100px"}}></div>
+        <h1 style={{textAlign:"center", fontSize:"40px", paddingTop:"20px", paddingBottom:"20px"}} >
+          Now check your Diabetic Retinopathy online.
         </h1>
-
-    
-       
-      <Footer>
+        <h2 style={{textAlign:"center", fontSize:"30px", paddingTop:"20px", paddingBottom:"20px"}}>
+          Please register with us & Upload an image of your retina.
+        </h2>
+        <div style={{height:"100px"}}></div>
+        <Body/>
+      </div>    
+      <Footer style={{padding:"20px"}}>
         <Footer.Wrapper>
           <Footer.Row>
             <Footer.Column>
